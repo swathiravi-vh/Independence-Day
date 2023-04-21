@@ -1,48 +1,98 @@
-let hell=document.querySelector(".hell");
- setTimeout(function(){
-    hell.innerText ="10";
-    setTimeout(function(){
-        hell.innerText ="9";
-        setTimeout(function(){
-            hell.innerText="8";
-            setTimeout(function(){
-                hell.innerText="7";
-                setTimeout(function(){
-                    hell.innerText="6";
-                    setTimeout(function(){
-                        hell.innerText="7";
-                        setTimeout(function(){
-                            hell.innerText="5";
-                            setTimeout(function(){
-                                hell.innerText="4";
-                                setTimeout(function(){
-                                    hell.innerText="3";
-                                    setTimeout(function(){
-                                        hell.innerText="2";
-                                        setTimeout(function(){
-                                            hell.innerText="1";
-                                            setTimeout(function () {
+var counter=10;
 
-                                                hell.innerText = "Happy Independence Day!";
+
+const main=(counter)=>{
+    setTimeout(()=>{
+        counter--;
+            if(counter>=0){
+                var id=document.getElementById("count");
+
+                id.innerHTML=counter;
+            }
+                           
+   
+
+            setTimeout(()=>{
+                counter--;
+                if(counter>=0){
+                var id=document.getElementById("count");
+
+                id.innerHTML=counter;}
+
+                setTimeout(()=>{
+                    counter--;
+                    if(counter>=0){
+                    var id=document.getElementById("count");
     
-                                            }, 1000);
-                                        },1000);
-
-                                    },1000);
-                                
-                                },1000);
+                    id.innerHTML=counter;}
 
 
-                            },1000);
-                        },1000);
-
-
+                    setTimeout(()=>{
+                        counter--;
+                        if(counter>=0){
+                        var id=document.getElementById("count");
+        
+                        id.innerHTML=counter;}
+    
+                        setTimeout(()=>{
+                            counter--;
+                            if(counter>=0){
+                            var id=document.getElementById("count");
+            
+                            id.innerHTML=counter;}
+        
+                            setTimeout(()=>{
+                                counter--;
+                                if(counter>=0){
+                                var id=document.getElementById("count");
+                
+                                id.innerHTML=counter;}
+            
+                                setTimeout(()=>{
+                                    counter--;
+                                    if(counter>=0){
+                                    var id=document.getElementById("count");
                     
-                    },1000);
+                                    id.innerHTML=counter;}
+                
+                                    setTimeout(()=>{
+                                        counter--;
+                                        if(counter>=0){
+                                        var id=document.getElementById("count");
+                        
+                                        id.innerHTML=counter;}
+                    
+                                        setTimeout(()=>{
+                                            counter--;
+                                            if(counter>=0){
+                                            var id=document.getElementById("count");
+                            
+                                            id.innerHTML=counter;}
+                        
+                                            setTimeout(()=>{
+                                                counter--;
+                                                if(counter>=0){
+                                                var id=document.getElementById("count");
+                                
+                                                id.innerHTML=counter;}
+                                              
 
-                },1000);
-            },1000);
+                                                if(counter===0){
+                                                    id.innerHTML="Happy Independance Day";
+                                                }
+                                                
+                                            
+                                                },1000)
+                                            },1000)
+                                        },1000)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
+                    },1000)
+            },1000)
+            
+        },1000)
 
-        },1000);
-    },1000);
- },1000);
+}
+main(counter)
